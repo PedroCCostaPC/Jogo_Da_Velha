@@ -1,0 +1,391 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Ubuntu-Regular';
+}
+
+:root {
+    --azul-Escuro: #13161e;
+    --azul-Claro: #222c48;
+    --vermelho-Escuro: #420202;
+    --fundo: #191919;
+    --avancar: #0b4412;
+    --vermelho-Claro: #ef7070;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+}
+
+#pai {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: var(--fundo);
+}
+
+/* ------------------ Inicio ------------------ */
+#inicio {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: var(--vermelho-Escuro);
+    text-align: center;
+    overflow: hidden;
+}
+
+#inicio button {
+    cursor: pointer;
+    font-size: 16px;
+    left: 0;
+}
+
+#inicio .escolhendoPlayer .player {
+    width: 100%;
+    height: 70px;
+    background: var(--azul-Escuro);
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+}
+
+#inicio .escolhendoPlayer .player:first-child {
+    margin-top: 100px;
+}
+
+
+#inicio .escolhendoPlayer .avancar{
+    width: 70%;
+    height: 80px;
+    background: var(--avancar);
+    color: #fff;
+    margin-top: 100px;
+    border: none;
+}
+
+.hvr-bounce-to-right:before {
+    background: var(--azul-Claro);
+}
+
+.hvr-shutter-out-horizontal:before {
+    background: var(--azul-Escuro);
+}
+
+#erro,
+#UmPlayererro {
+    width: 100%;
+    height: 50px;
+    background-color: #f8d7da;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border: solid 1px #bf3434;
+    color: #bf3434;
+    font-size: 14px;
+    font-family: 'Ubuntu-Bold';
+    line-height: 40px;
+    text-align: center;
+}
+
+.erro {
+    display: none;
+}
+
+
+#inicio .mudaCorBot {
+    background: var(--azul-Claro) !important;
+}
+
+#inicio .anime { 
+    transition: .5s;
+    left: -400px !important;
+}
+
+
+/* ------------------ Segunda Tela ------------------ */
+.mudaCampo {
+    display: none;
+}
+
+#umPlayer,
+#doisPlayer {
+    padding: 0 50px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+#umPlayer label,
+#doisPlayer label {
+    color: #fff;
+    font: 14px;
+    margin-left: 0;
+    transition: .3s;
+    width: 100%;
+    display: block;
+}
+
+#umPlayer input,
+#doisPlayer input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    background: #fff;
+    margin-left: 0;
+    transition: .3s;
+}
+
+#umPlayer input:focus,
+#doisPlayer input:focus {
+    outline: 3px solid #fff;
+}
+
+
+#umPlayer button,
+#doisPlayer button {
+    width: 140px;
+    height: 50px;
+    float: left;
+    margin-top: 200px;
+    margin-left: 3px;
+    color: #fff;
+    transition: .3s;
+    border: none;
+}
+#doisPlayer button {
+    margin-top: 70px;
+}
+
+.inicio {
+    background: var(--azul-Claro);
+}
+
+.proximo {
+ background: var(--avancar);
+}
+
+
+#umPlayer .anime,
+#doisPlayer .anime {
+    margin-left: -400px !important;
+}
+
+
+
+/* ------------------ Jogo ------------------ */
+#jogoUmPlayer {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    display: none;
+}
+
+#jogoUmPlayer .col1 {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: var(--azul-Escuro);
+    border-right: solid 1px #fff;
+    box-sizing: border-box;
+}
+
+#jogoUmPlayer .col2 {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+    background: var(--vermelho-Escuro);
+}
+
+#jogoUmPlayer .col1 .titulo {
+    width: 100%;
+    padding: 20px 0;
+    background: var(--azul-Claro);
+    text-align: center;
+    color: #fff;
+}
+
+
+#jogoUmPlayer .jogadores {
+    position: relative;
+    width: 80%;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+#jogoUmPlayer .jogadores .jogador1,
+#jogoUmPlayer .jogadores .robo,
+#jogoUmPlayer .jogadores .velha {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#jogoUmPlayer .jogadores .nome {
+    width: 100%;
+    float: left;
+    color: #fff;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+#jogoUmPlayer .jogadores .placar {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-top: 10px;
+}
+
+#jogoUmPlayer .jogadores .placar .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: var(--azul-Claro);
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 3px #fff;
+    z-index: 1;
+}
+#jogoUmPlayer .jogadores .placar .avatar img {
+    width: 80px;
+    margin-left: -5px;
+}
+
+#jogoUmPlayer .jogadores .placar .resultado {
+    position: absolute;
+    width: 90%;
+    height: 80px;
+    background: var(--azul-Escuro);
+    border: solid 3px var(--azul-Claro);
+    right: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#jogoUmPlayer .jogadores .placar .resultado p {
+    margin-left: 70px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+
+
+
+#jogoUmPlayer .jogadores .velha .nome {
+    margin-left: 180px;
+}
+#jogoUmPlayer .jogadores .velha .avatar {
+    right: -200px;
+}
+#jogoUmPlayer .jogadores .velha .resultado {
+    left: -15px;
+}
+#jogoUmPlayer .jogadores .velha .resultado p {
+    float: right;
+    margin-right: 70px;
+}
+
+
+#jogoUmPlayer .col1 .menuPrincipal {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+#jogoUmPlayer .col1 .menuPrincipal button {
+    border: none;
+    background: var(--azul-Claro);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: solid 1px var(--azul-Claro);
+}
+
+
+/* ------------------ Avatares ------------------ */
+.block {
+    display: none;
+}
+
+#jogoUmPlayer .avatares,
+.block {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+#jogoUmPlayer .avatares .escolhaAvatar {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+}
+
+.avatares .avatarIcons {
+    width: 100%;
+    height: 650px;
+    padding: 20px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: auto;
+    border-top: solid 1px #2d0303;
+}
+
+.avatares .avatarIcons::-webkit-scrollbar {
+    width: 10px;
+  }
+ 
+.avatares .avatarIcons::-webkit-scrollbar-track {
+    background-color: var(--vermelho-Escuro);
+}
+ 
+.avatares .avatarIcons::-webkit-scrollbar-thumb {
+    background-color: #2d0303;
+    border: solid 3px #2d0303;
+    border-radius: 10px;
+}
+
+.avatares .avatarIcons button {
+    background: none;
+    border: solid 3px #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.avatares .avatarIcons button img {
+    width: 100%;
+    transition: .5s;
+}
+
+.avatares .avatarIcons button img:hover {
+    transform: rotate(-360deg);
+}
+

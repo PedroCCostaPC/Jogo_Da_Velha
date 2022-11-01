@@ -1,0 +1,57 @@
+/* @media only screen and (min-width:  701px) { */
+
+    #placarJogadores .animeNome {
+        font-size: 0;
+    }
+
+
+    #placarJogadores .avatarPlacar .anime {
+        opacity: 0;
+        width: 0;
+    }
+
+    #placarJogadores .avatarPlacar .animeAvatar {
+        opacity: 0;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    #placarJogadores .avatarPlacar .anime2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    #placarJogadores .avatarPlacar .anime2 img {
+        width: 100%;
+        transform: rotate(360deg);
+    }
+
+
+    #campo .anime {
+        left: 100%;
+    }
+
+    .animeAvatares {
+        margin-top: 100% !important;
+    }
+
+
+    .botVoltaAnime {
+        opacity: 0;
+    }
+
+    .animeJogandoVelha {
+        margin-left: 100% !important;
+    }
+
+
+
+    #jogandoVelha button {
+        transition: .7s;
+    }
+    #jogandoVelha .anime {
+        transform: rotate(9000deg);
+    }
+
+
+/* } */

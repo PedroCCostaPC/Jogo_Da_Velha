@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --azul-Escuro: #13161e;
+    --azul-Claro: #222c48;
+    --vermelho-Claro: #420202;
+    --vermelho-Escuro: #2d0303;
+    --fundo: #191919;
+    --verde: #0b4412;
+}
+
+#pai {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: var(--fundo);
+}
+/* ------------ Bot Menu Mobile ------------ */
+#navMobile {
+    display: none;
+}
+
+
+/* ------------------ Inicio ------------------ */
+#menuPrincipal {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: var(--vermelho-Claro);
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.animePrincipal {
+    width: 0 !important;
+}
+
+/* ---- botões das telas ---- */
+.tela {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tela button {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    border: solid 1px var(--azul-Escuro);
+    color: #fff;
+    font-size: 18px;
+    background: var(--azul-Escuro);
+    transition: .5s;
+    margin-top: 30px;
+    left: 0;
+}
+
+.tela .hvr-shutter-out-horizontal:before {
+    background: var(--vermelho-Claro);
+}
+
+/* ---- Input das telas ---- */
+.tela input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: var(--vermelho-Claro);
+    padding: 0 30px;
+}
+
+.tela input::placeholder {
+    color: #d6d8d9;
+}
+
+.tela input:focus {
+    outline: solid 5px var(--vermelho-Claro);
+}
+
+.tela .anime {
+    left: -400px;
+}
+
+
+/* ----------- Tela 1 ----------- */
+#tela1 button:first-child {
+    margin-top: 130px;
+}
+
+/* ----------- Tela 2 ----------- */
+#tela2 {
+    display: none;
+}
+
+#aviso {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    background: #d6d8d9;
+    color: #464646;
+    left: 5%;
+    bottom: 10px;
+    line-height: 50px;
+    border: solid 1px #464646;
+    border-radius: 5px;
+}
+
+#tela2 button:first-child {
+    margin-top: 60px;
+}
+
+/* ----------- Tela 3 ----------- */
+#tela3 {
+    display: none;
+}
+
+#tela3 input {
+    top: 150px;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+
+#tela3 button {
+    margin-top: 250px;
+}
+
+#tela3 .anime2 {
+    left: -500px !important;
+}
+
+/* ----------- Tela 4 ----------- */
+#tela4 {
+    display: none;
+}
+
+#tela4 input {
+    top: 150px;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+
+#tela4 input:first-child {
+    top: 100px;
+}
+
+#tela4 input {
+    top: 190px;
+}
+
+#tela4 .anime2 {
+    left: -500px !important;
+}
+
+#tela4 button {
+    margin-top: 290px;
+}
+
+
+
+
+
+
+
+/* ------------------ Jogo ------------------ */
+#jogo {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    align-items: center;
+    display: none;
+}
+
+
+
+/* -------- Placar -------- */
+#placar {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: var(--azul-Escuro);
+    border-right: solid 2px #fff;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.placarAnime1 {
+    width: 20px !important;
+    border: transparent !important;
+}
+.placarAnime2 {
+    height: 80px !important;
+}
+
+#placarTitulo {
+    width: 100%;
+    height: 80px;
+    background: var(--azul-Claro);
+    text-align: center;
+}
+
+#placarTitulo h1 {
+    color: #fff;
+    padding-top: 25px;
+    display: none;
+}
+
+
+
+#placarJogadores {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.jogadores {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    height: 120px;
+}
+
+#placarJogadores .nome {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+#velha .nome {
+    text-align: right;
+}
+
+
+#placarJogadores .avatarPlacar {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#placarJogadores .avatarPlacar .avatarPlayer {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    background: var(--azul-Claro);
+    border: solid 3px #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+#placarJogadores .avatarPlacar .avatarPlayer img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    border-radius: 100%;
+}
+#jogadorUm .avatarPlacar .avatarPlayer,
+#jogadorDois .avatarPlacar .avatarPlayer {
+    left: 0;
+}
+#velha .avatarPlacar .avatarPlayer {
+    right: 0;
+}
+
+
+
+#placarJogadores .avatarPlacar .placarPlayer {
+    position: absolute;
+    top: 3px;
+    width: 90%;
+    height: 70px;
+    border: solid 3px var(--azul-Claro);
+    border-radius: 50px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 40px;
+    padding-top: 10px;
+    transition: .5s;
+}
+
+#jogadorUm .avatarPlacar .placarPlayer,
+#jogadorDois .avatarPlacar .placarPlayer {
+    left: 10%;
+    padding-left: 60px;
+}
+
+#velha .avatarPlacar .placarPlayer {
+    text-align: right;
+    padding-right: 60px;
+}
+
+
+
+
+#botVoltaInicio {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+#botVoltaInicio button {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: var(--azul-Claro);
+    border: solid 1px var(--azul-Claro);
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: .7s;
+    display: none;
+}
+
+#botVoltaInicio .hvr-shutter-out-horizontal:before {
+ background: var(--azul-Escuro);
+}
+
+
+
+/* -------- Campo -------- */
+#campo {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+    background: var(--vermelho-Claro);
+    transition: .5s;
+    overflow: hidden;
+}
+
+.campoAnime {
+    width: 0px !important;
+}
+
+.campoJogador {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: var(--vermelho-Escuro);
+    color: #fff;
+    font-size: 25px;
+    padding: 40px 50px 0 50px;
+    box-sizing: border-box;
+    transition: .3s;
+    left: 0;
+    z-index: 1;
+}
+
+.campoJogador b {
+    color: #3b57a7;
+}
+
+#avateres {
+    width: 100%;
+    height: 640px;
+    text-align: center;
+    margin-top: 140px;
+    overflow: auto;
+    transition: .3s;
+    display: none;
+}
+
+#avateres::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+#avateres::-webkit-scrollbar-track {
+    background-color: var(--vermelho-Claro);
+}
+ 
+#avateres::-webkit-scrollbar-thumb {
+    background-color: var(--vermelho-Escuro);
+    border-radius: 10px;
+}
+
+#avateres button {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 3px #fff;
+    transition: .5s;
+    background: var(--azul-Claro);
+}
+
+#avateres button img {
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: .7;
+    transition: .5s;
+    border-radius: 100%;
+}
+
+#avateres button:hover {
+    transform: rotate(-360deg);
+}
+
+#avateres button img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+#jogandoVelha {
+    width: 100%;
+    margin-top: 130px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 0;
+    transition: .3s;
+    display: none;
+}
+
+#jogandoVelha button {
+    width: 190px;
+    height: 190px;
+    margin: 15px;
+    border-radius: 100%;
+    background: var(--azul-Escuro);
+    border: solid 3px #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#jogandoVelha button img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+#jogandoVelha button:hover {
+    background: var(--azul-Claro);
+}
+
+#block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}

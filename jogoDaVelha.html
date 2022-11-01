@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo da Velha</title>
+
+    <!-- /////// CSS ////// -->
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="../../assets/lib/icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/velhaDescktop.css">
+    <link rel="stylesheet" href="assets/css/animacao.css">
+    <link rel="stylesheet" href="assets/css/velhaMobile.css">
+
+
+
+
+</head>
+<body>
+<div id="pai">
+
+    
+    <!-- //////////// Menu Principal //////////// -->
+    <section id="menuPrincipal">
+
+        <!-- Tela 1 -->
+        <div id="tela1" class="tela">
+            <button class="hvr-shutter-out-horizontal um-participante">Um Jogador</button>
+            <button class="hvr-shutter-out-horizontal dois-participante">Dois Jogadores</button>
+        </div>
+
+
+        <!-- Tela 2 -->
+        <!-- Visivel caso seja Um jogador -->
+        <div id="tela2" class="tela">
+            <button class="hvr-shutter-out-horizontal anime facil">Fácil</button>
+            <button class="hvr-shutter-out-horizontal anime normal">Normal</button>
+            <button class="hvr-shutter-out-horizontal anime dificil">Difícil</button>
+
+            <div id="aviso">Niveis <b>'Normal'</b> e <b>'Difícil'</b> em desenvolvimento</div>
+        </div>
+
+
+
+        <!-- Tela 3 -->
+        <div id="tela3" class="tela">
+            <input class="anime2" placeholder="Digite seu nome">
+            <button class="hvr-shutter-out-horizontal anime">Começar</button>
+        </div>
+
+
+        <!-- Tela 4 -->
+        <!-- Visivel caso seja Dois jogadores -->
+        <div id="tela4" class="tela">
+            <input class="anime2 jogador1" placeholder="Jogador 1">
+            <input class="anime2 jogador2" placeholder="Jogador 2">
+            <button class="hvr-shutter-out-horizontal anime">Começar</button>
+        </div>
+
+
+    </section>
+
+
+    <!-- //////////// Bot Menu Mobile //////////// -->
+    <section id="navMobile" class="navAnime">
+        <nav><i class="bi bi-list"></i></nav>
+    </section>
+
+
+
+
+
+    <!-- //////////// Jogando //////////// -->
+    <section id="jogo">
+
+        <div id="placar" class="placarAnime1 placarAnime2 animePlcacarMobile">
+
+            <div id="placarTitulo"><h1>Placar</h1></div>
+
+
+            <div id="placarJogadores">
+                <!-- //////// Player 1 //////// -->
+                <div id="jogadorUm" class="jogadores">
+                    <div class="nome animeNome"></div>
+
+                    <div class="avatarPlacar">
+                        <div class="avatarPlayer animeAvatar anime2"></div>
+                        <div class="placarPlayer anime">0</div>
+                    </div>
+                </div><!-- Fim div #jogadorUm-->
+
+
+
+                <!-- //////// Player 2 //////// -->
+                <div id="jogadorDois" class="jogadores">
+                    <div class="nome animeNome"></div>
+
+                    <div class="avatarPlacar">
+                        <div class="avatarPlayer animeAvatar anime2"></div>
+                        <div class="placarPlayer anime">0</div>
+                    </div>
+                </div><!-- Fim div #jogadorUm-->
+
+
+
+                <!-- //////// Velha //////// -->
+                <div id="velha" class="jogadores">
+                    <div class="nome animeNome">Velha</div>
+
+                    <div class="avatarPlacar">
+                        <div class="avatarPlayer animeAvatar anime2"><img src="assets/img/avatar/velha.jpg"></div>
+                        <div class="placarPlayer anime">0</div>
+                    </div>
+                </div><!-- Fim div #jogadorUm-->
+
+            </div><!-- Fim div #placarJogadores -->
+
+
+            <div id="botVoltaInicio">
+                <button class="hvr-shutter-out-horizontal botVoltaAnime">Voltar ao menu Principal</button>
+            </div>
+
+        </div><!-- Fim div #placar -->
+
+
+
+
+
+        <div id="campo" class="campoAnime">
+            <div id="campoJogador" class="campoJogador anime"></div>
+
+            <div id="avateres" class="animeAvatares">
+                <button><img title="avatar1" src="assets/img/avatar/avatar1.jpg"></button>
+                <button><img title="avatar2" src="assets/img/avatar/avatar2.jpg"></button>
+                <button><img title="avatar3" src="assets/img/avatar/avatar3.jpg"></button>
+                <button><img title="avatar4" src="assets/img/avatar/avatar4.jpg"></button>
+                <button><img title="avatar5" src="assets/img/avatar/avatar5.jpg"></button>
+                <button><img title="avatar6" src="assets/img/avatar/avatar6.jpg"></button>
+                <button><img title="avatar7" src="assets/img/avatar/avatar7.jpg"></button>
+                <button><img title="avatar8" src="assets/img/avatar/avatar8.jpg"></button>
+                <button><img title="avatar9" src="assets/img/avatar/avatar9.jpg"></button>
+                <button><img title="avatar10" src="assets/img/avatar/avatar10.jpg"></button>
+                <button><img title="avatar11" src="assets/img/avatar/avatar11.jpg"></button>
+                <button><img title="avatar12" src="assets/img/avatar/avatar12.jpg"></button>
+                <button><img title="avatar13" src="assets/img/avatar/avatar13.jpg"></button>
+                <button><img title="avatar14" src="assets/img/avatar/avatar14.jpg"></button>
+                <button><img title="avatar15" src="assets/img/avatar/avatar15.jpg"></button>
+                <button><img title="avatar16" src="assets/img/avatar/avatar16.jpg"></button>
+                <button><img title="avatar17" src="assets/img/avatar/avatar17.jpg"></button>
+                <button><img title="avatar18" src="assets/img/avatar/avatar18.jpg"></button>
+                <button><img title="avatar19" src="assets/img/avatar/avatar19.jpg"></button>
+                <button><img title="avatar20" src="assets/img/avatar/avatar20.jpg"></button>
+                <button><img title="avatar21" src="assets/img/avatar/avatar21.jpg"></button>
+                <button><img title="avatar22" src="assets/img/avatar/avatar22.jpg"></button>
+                <button><img title="avatar23" src="assets/img/avatar/avatar23.jpg"></button>
+                <button><img title="avatar24" src="assets/img/avatar/avatar24.jpg"></button>
+                <button><img title="avatar25" src="assets/img/avatar/avatar25.jpg"></button>
+                <button><img title="avatar26" src="assets/img/avatar/avatar26.jpg"></button>
+                <button><img title="avatar27" src="assets/img/avatar/avatar27.jpg"></button>
+                <button><img title="avatar28" src="assets/img/avatar/avatar28.jpg"></button>
+                <button><img title="avatar29" src="assets/img/avatar/avatar29.jpg"></button>
+                <button><img title="avatar30" src="assets/img/avatar/avatar30.jpg"></button>
+                <button><img title="avatar31" src="assets/img/avatar/avatar31.jpg"></button>
+                <button><img title="avatar32" src="assets/img/avatar/avatar32.jpg"></button>
+                <button><img title="avatar33" src="assets/img/avatar/avatar33.jpg"></button>
+                <button><img title="avatar34" src="assets/img/avatar/avatar34.jpg"></button>
+                <button><img title="avatar35" src="assets/img/avatar/avatar35.jpg"></button>
+                <button><img title="avatar36" src="assets/img/avatar/avatar36.jpg"></button>
+            </div><!-- Fim div #avatares-->
+
+
+
+            <!-- ///// Jogando ///// -->
+            <div id="jogandoVelha" class="animeJogandoVelha">
+                <div id="block"></div>
+
+                <div class="col">
+                    <button id="A-1"></button>
+                    <button id="A-2"></button>
+                    <button id="A-3"></button>
+                </div>
+                
+                <div class="col">
+                    <button id="B-1"></button>
+                    <button id="B-2"></button>
+                    <button id="B-3"></button>
+                </div>
+                
+                <div class="col">
+                    <button id="C-1"></button>
+                    <button id="C-2"></button>
+                    <button id="C-3"></button>
+                </div>
+                
+            </div>
+
+
+        </div><!-- Fim div #campo -->
+
+
+
+    </section>
+
+
+
+
+
+</div>
+    <script src="../../assets/lib/jquery/jquery.js"></script>
+    <script src="assets/js/velha.js"></script>
+</body>
+</html>

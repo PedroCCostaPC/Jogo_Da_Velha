@@ -1,0 +1,104 @@
+@media only screen and (max-width:  700px) {
+    #pai {
+        background: var(--vermelho-Claro);
+    }
+    
+
+    /* ------------------ Inicio ------------------ */
+    #menuPrincipal {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* ------------ Bot Menu Mobile ------------ */
+    #navMobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        right: 0;
+        background: var(--azul-Claro);
+        z-index: 3;
+        transition: .5s;
+    }
+
+    .navAnime {
+        right: -100% !important;
+    }
+
+    #navMobile nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+
+    /* ------------------ Jogo ------------------ */
+    #jogo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #placarTitulo h1 {
+        display: none !important;
+    }
+
+    #placar {
+        position: absolute;
+        z-index: 2;
+        border: none;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .animePlcacarMobile {
+        right: -100% !important;
+    }
+
+    #placarJogadores {
+        margin-top: 10px;
+    }
+
+    .jogadores {
+        height: 100px;
+    }
+    
+
+
+    /* -------- Campo -------- */
+    #campo {
+        width: 100%;
+    }
+    .campoAnime {
+        width: 100% !important;
+    }
+
+
+    .campoJogador {
+        margin-top: 90px;
+        font-size: 18px;
+        padding: 20px 20px;
+        text-align: center;
+        height: 60px;
+    }
+
+
+    #jogandoVelha {
+        margin-top: 220px;
+        padding: 0;
+    }
+
+    #jogandoVelha button {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+
+
+}
